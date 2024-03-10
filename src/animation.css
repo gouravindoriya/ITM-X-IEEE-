@@ -1,0 +1,51 @@
+.tracking-in-expand {
+  animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s alternate both;
+}
+
+.tracking-in-expand-1 {
+  animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s alternate both;
+}
+
+.hblack:hover {
+
+  border: 2px solid rgb(221, 217, 255);
+
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.slide-out-bottom {
+
+  animation: slide-out-bottom 0.5s ease both;
+  /* animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+}
+
+
+@keyframes slide-out-bottom {
+  0% {
+
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
